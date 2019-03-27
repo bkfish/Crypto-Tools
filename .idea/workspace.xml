@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf6c43d4-2b04-41f9-817d-c810abd1bdad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/godZan/crypto/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/godZan/crypto/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +15,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/godZan/crypto/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
+            <state relative-caret-position="406">
               <caret line="94" column="4" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -203,16 +203,15 @@
       <updated>1553683638032</updated>
       <workItem from="1553683640879" duration="9687000" />
       <workItem from="1553702416113" duration="9022000" />
-      <workItem from="1553716009023" duration="4379000" />
+      <workItem from="1553716009023" duration="4837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23088000" />
+    <option name="totallyTimeSpent" value="23546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20052083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -450,7 +449,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/godZan/crypto/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
+        <state relative-caret-position="406">
           <caret line="94" column="4" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
