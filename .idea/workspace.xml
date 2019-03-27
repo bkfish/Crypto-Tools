@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf6c43d4-2b04-41f9-817d-c810abd1bdad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/godZan/crypto/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/godZan/crypto/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/godZan/crypto/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/godZan/crypto/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/godZan/crypto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/godZan/crypto/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/godZan/crypto/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/godZan/crypto/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/godZan/cryptoFunction/morse_moudle.py" beforeDir="false" afterPath="$PROJECT_DIR$/godZan/cryptoFunction/morse_moudle.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +15,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/godZan/crypto/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+            <state relative-caret-position="487">
+              <caret line="94" column="4" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#377#1250#0" />
+                <element signature="e#1324#1879#0" />
+                <element signature="e#1851#2299#0" />
+                <element signature="e#2325#2771#0" />
               </folding>
             </state>
           </provider>
@@ -204,12 +203,12 @@
       <updated>1553683638032</updated>
       <workItem from="1553683640879" duration="9687000" />
       <workItem from="1553702416113" duration="9022000" />
-      <workItem from="1553716009023" duration="3868000" />
+      <workItem from="1553716009023" duration="4379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22577000" />
+    <option name="totallyTimeSpent" value="23088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -451,10 +450,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/godZan/crypto/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+        <state relative-caret-position="487">
+          <caret line="94" column="4" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#377#1250#0" />
+            <element signature="e#1324#1879#0" />
+            <element signature="e#1851#2299#0" />
+            <element signature="e#2325#2771#0" />
           </folding>
         </state>
       </provider>

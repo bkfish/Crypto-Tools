@@ -7,7 +7,7 @@ from cryptoFunction.morse_moudle import Morse
 import urllib.request
 from django.shortcuts import render_to_response, render, redirect
 
-
+#BASE家族
 def base(request):
     if request.method=='POST':
         input = request.POST['input']
@@ -34,6 +34,7 @@ def base(request):
     else:
         return render(request, 'base.html',{'output':"",'input':''})
 
+#Hex编码
 def hexAscii(request):
     if request.method=='POST':
         input = request.POST['input']
@@ -52,6 +53,7 @@ def hexAscii(request):
     else:
         return render(request, 'hexAscii.html', {'output': "", 'input': ''})
 
+#URL编码
 def urlCode(request):
     if request.method=='POST':
         input = request.POST['input']
@@ -66,6 +68,7 @@ def urlCode(request):
     else:
         return render(request, 'urlCode.html', {'output': "", 'input': ''})
 
+#莫斯编码
 def morse(request):
     if request.method=='POST':
         input = request.POST['input']
@@ -89,7 +92,6 @@ def morse(request):
     else:
         return render(request, 'morse.html', {'output': "", 'input': ''})
 
-
+#莫斯表
 def morseTable(request):
-
     return render(request, 'morseTable.html')
