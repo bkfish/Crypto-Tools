@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from cryptoFunction import md5_moudle,MD5_online_crack,b64_moudle,b58_moudle,b32_moudle,b16_moudle,caesar,Railfence,ascii_brute_moudle,rot13_moudle,RGB2pic_moudle,factorization_moudle,num_to_QR_moudle
+from cryptoFunction import md5_moudle,b64_moudle,b58_moudle,b32_moudle,b16_moudle,caesar,Railfence,ascii_brute_moudle,rot13_moudle,RGB2pic_moudle,factorization_moudle,num_to_QR_moudle
 # Create your views here.
 import urllib.request
 from django.shortcuts import render_to_response, render, redirect
