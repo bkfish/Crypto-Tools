@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:>
 <head>
 
   <title>demo</title>
@@ -8,7 +8,7 @@
  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
    <script  src="/static/js/jquery.min.js"></script>
 </head>
-<style> 
+<style>
 textarea {
   /*font-family:Consolas,'Lucida Console','DejaVu Sans Mono',monospace;*/
   font-size: 12pt;
@@ -26,7 +26,7 @@ body{
   background-size:100%;
 }
 
-::-webkit-input-placeholder { 
+::-webkit-input-placeholder {
   text-align: center;
   line-height: 250px;
   font-size: 16pt;
@@ -48,7 +48,7 @@ height:618px;
 </style>
 <body>
  <div class="conter" >
-        <h1>BASE全家桶
+        <h1>摩尔斯编码
         </h1>
 
         <div class="input">
@@ -56,24 +56,15 @@ height:618px;
         </div>
 
      <div class="btn-group">
-            <button  type="button"  class="btn btn-defult" onclick="myEncode('b64e')">Base64加密</button>
-            <button  type="button"  class="btn btn-primary" onclick="myEncode('b64d')">Base64解密</button>
-            <button  type="button"  class="btn btn-defult" onclick="myEncode('b58e')">Base58加密</button>
-            <button  type="button"  class="btn btn-primary" onclick="myEncode('b58d')">Base58解密</button>
-            <button  type="button"  class="btn btn-success" onclick="myEncode('b32e')">Base32加密</button>
-            <button  type="button"  class="btn btn-waring" onclick="myEncode('b32d')">Base32解密</button>
-            <button  type="button"  class="btn btn-primary" onclick="myEncode('b16e')">Base16加密</button>
-            <button  type="button"  class="btn btn-danger" onclick="myEncode('b16d')">Base16解密</button>
+            <button  type="button"  class="btn btn-success" onclick="myEncode('encode')">摩尔斯编码</button>
+            <button  type="button"  class="btn btn-primary" onclick="myEncode('decode')">摩尔斯解码以空格分开</button>
      </div>
-
         <div class="output">
           <textarea id="output" placeholder="这里是客官需要的输出">{{output}}</textarea>
         </div>
-        <a class="btn btn-danger " href="/">返回主页</a>
-
+      <a class="btn btn-warning " href="/crypto/morseTable/">查看摩尔斯密码本</a>
+      <a class="btn btn-danger " href="/">返回主页</a>
       </div>
-
-
 </div>
 
 </body>
@@ -82,7 +73,7 @@ height:618px;
         var input = document.getElementById("inpsut").value;
         postData = {"input": input, "type": type1};
         console.log(input+type1);
-         $.post("/crypto/base/",postData,function (output) {
+         $.post("/crypto/morse/",postData,function (output) {
         document.getElementById("output").innerHTML=output;
        })
     }

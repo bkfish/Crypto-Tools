@@ -19,8 +19,7 @@ class Morse(object):
         #print(self.values)
         #print(self.items)
 
-    def morse_en(self):
-        string = input('输入加密字符串\n')
+    def morse_en(self,string):
         ok = []
         for i in string.upper():
             for k in range(len(self.items)):
@@ -29,8 +28,7 @@ class Morse(object):
 
         return ok
 
-    def morse_de(self):
-        a = input('解密字符串以空格隔开\n')
+    def morse_de(self,a):
         b = a.split()
         ok = []
         for i in b:

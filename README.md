@@ -4,3 +4,9 @@
 ## 目前功能
 #### 1、BASE家族
 ![](image/2.png)
+#### 2、Hex编码
+![](image/3.png)
+#### 3、URL编码
+![](image/4.png)
+#### 4、摩尔斯编码
+![](image/5.png)
