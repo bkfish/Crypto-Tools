@@ -10,5 +10,8 @@ def b64encode(string):
 
 
 def b64decode(string):
-    a = base64.b64decode(string).decode()
+    try:
+        a = base64.b64decode(string).decode("utf8", "ignore")
+    except:
+        a="客官您的数据格式不像是base64的密文鸭 多半是凉了 抱歉哦(⊙o⊙) 或者您换个加密方式"
     return a
