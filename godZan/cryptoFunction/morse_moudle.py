@@ -3,7 +3,7 @@
 
 class Morse(object):
     def __init__(self):
-        file = open('./source/morse_dic.txt', 'r', encoding='utf8')
+        file = open('./cryptoFunction/morse_dic.txt', 'r', encoding='utf8')
 
         self.sum_char = []
         for i in file.readlines():
