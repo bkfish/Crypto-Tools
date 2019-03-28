@@ -14,11 +14,15 @@ def caesar_encode(string, key):
 
 # 爆破
 def caesar_brute(string):
-    for i in range(26):
-        print('%s:'% i, end='')
-        a = caesar_encode(string, i)
-        print(a)
+	output=""
+	for i in range(26):
+		print('%s:'% i, end='')
+		a = caesar_encode(string, i)
+		output1=str(i)+":"+a+"\n"
+		output=output+output1
+	return output
 
+# 爆破 带符号和数字
 def kaisa(lstr):
 	count=0
 	returnStr=""
@@ -34,7 +38,7 @@ def kaisa(lstr):
 				break
 		if feel == 1:
 			count=count+1
-			returnStr = returnStr + str(count)+":"+str1 + '\n'
+			returnStr = returnStr + str(count-1)+":"+str1 + '\n'
 	return returnStr
 
 

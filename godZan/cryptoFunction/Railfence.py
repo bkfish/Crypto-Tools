@@ -2,13 +2,8 @@
 
 from pycipher import Railfence
 
-'''有误
-def Rail_encode(string, key):
-    a = Railfence(int(key)).encipher(string)
-    return a
-'''
 
-def Rail_decode(e, f):
+def Rail_encode(e, f):
     elen = len(e)
     b = elen / f
     result = {x: '' for x in range(int(b))}
@@ -18,15 +13,16 @@ def Rail_decode(e, f):
     d = ''
     for i in range(int(b)):
         d = d + result[i]
-    print('分为\t', str(f), '\t', '栏时，解密结果为： ', d)
+    return d;
 
 
 def Rail_brute(string):
+    output=""
     elen = len(string)
     field = []  # field 为所有可能的栏数
     for i in range(2, elen):
         if (elen % i == 0):
             field.append(i)
     for f in field:
-        b = Rail_decode(string, f)
-        #print('分为\t', str(f), '\t', '栏时，解密结果为： ', b)
+        output=output+"f:"+str(f)+" "+str(Rail_encode(string, f))+"\n"
+    return output
