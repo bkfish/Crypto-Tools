@@ -33,7 +33,7 @@ python mannage runserver
 <img src="image/6.gif" width=600 height=460  />
 
 #### 6、凯撒加解密
-<img src="image/6.gif" width=600 height=460  />
+<img src="image/kaisa.gif" width=600 height=460  />
 
 #### 7、栅栏加解密
 <img src="image/zhalan.gif" width=600 height=460  />
