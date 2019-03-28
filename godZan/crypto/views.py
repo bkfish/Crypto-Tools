@@ -1,5 +1,5 @@
 import binascii
-
+from django.http import JsonResponse
 from django.http import HttpResponse
 from cryptoFunction import md5_moudle,b64_moudle,b58_moudle,b32_moudle,b16_moudle,caesar,Railfence,ascii_brute_moudle,rot13_moudle,RGB2pic_moudle,factorization_moudle,num_to_QR_moudle
 # Create your views here
@@ -95,3 +95,41 @@ def morse(request):
 #莫斯表
 def morseTable(request):
     return render(request, 'morseTable.html')
+
+def converter(request):
+    if request.method=='POST':
+        input = request.POST['input']
+        type=request.POST['type']
+        output = {"binOutput":"","octOutput":"","decOutput":"","hexOutput":""}
+        try:
+            if type=="bin":
+                output["binOutput"]="0b"+input
+                dec=int(input,2) # 拿到了十进制
+                output["octOutput"]=str(oct(dec)) #八进制
+                output["decOutput"]="0d"+str(dec) #十进制
+                output["hexOutput"]=str(hex(dec)) #十六进制
+            elif type == "oct":
+                dec=int(input,8) # 拿到了十进制
+                output["binOutput"]=str(bin(dec)) #二进制
+                output["octOutput"]=str(oct(dec)) #八进制
+                output["decOutput"]="0d"+str(dec) #十进制
+                output["hexOutput"]=str(hex(dec)) #十六进制
+            elif type == "dec":
+                dec=int(input,10) # 拿到了十进制
+                output["binOutput"]=str(bin(dec)) #二进制
+                output["octOutput"]=str(oct(dec)) #八进制
+                output["decOutput"]="0d"+str(dec) #十进制
+                output["hexOutput"]=str(hex(dec)) #十六进制
+            elif type == "hex":
+                dec=int(input,16) # 拿到了十进制
+                output["binOutput"]=str(bin(dec)) #二进制
+                output["octOutput"]=str(oct(dec)) #八进制
+                output["decOutput"]="0d"+str(dec) #十进制
+                output["hexOutput"]=str(hex(dec)) #十六进制
+            else:
+                output["binOutput"]=output["octOutput"]=output["decOutput"]=output["hexOutput"]="客官您输入错误"
+        except:
+            output["binOutput"]=output["octOutput"]=output["decOutput"]=output["hexOutput"]="客官您确定格式对啦??小站顶不住啦啦，或者您选择转换方式不对？？"
+        return JsonResponse(output)
+    else:
+        return render(request, 'converter.html')

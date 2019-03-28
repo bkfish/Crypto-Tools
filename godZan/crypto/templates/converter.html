@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:>
+<head>
+
+  <title>demo</title>
+     {% load static %}
+  <meta charset="utf-8">
+ <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   <script  src="/static/js/jquery.min.js"></script>
+</head>
+<style>
+textarea {
+  /*font-family:Consolas,'Lucida Console','DejaVu Sans Mono',monospace;*/
+  font-size: 12pt;
+  max-width: 95%;
+  width: 95%;
+  height: 120px;
+  border: 3px double #CD00CD;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #FFFFFF; /* Old browsers */
+}
+body{
+  background:#2F2F2F ;
+  background-size:100%;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  line-height: 120px;
+  font-size: 16pt;
+  color: #000000;
+}
+h1{
+
+color:#76EE00;
+}
+.conter{
+text-align:center;
+position: fixed;
+_position: absolute;
+left: 20%;
+width: 1000px;
+height:618px;
+}
+
+</style>
+<body>
+ <div class="conter" >
+        <h1>大数的进制转换
+        </h1>
+
+        <div class="input">
+          <textarea id="inpsut" placeholder="客官请在这输入注意前面不需要带符号">{{input}}</textarea>
+        </div>
+
+     <div class="btn-group">
+        <button  type="button"  class="btn btn-success" onclick="myEncode('bin')">我输入的是二进制</button>
+        <button  type="button"  class="btn btn-success" onclick="myEncode('oct')">我输入的是八进制</button>
+        <button  type="button"  class="btn btn-success" onclick="myEncode('dec')">我输入的是十进制</button>
+        <button  type="button"  class="btn btn-success" onclick="myEncode('hex')">我输入的是十六进制</button>
+     </div>
+        <div class="output">
+            <textarea id="binOutput" placeholder="这里是客官需要的二进制输出">{{binOutput}}</textarea>
+            
+            <textarea id="octOutput" placeholder="这里是客官需要的八进制输出">{{octOutput}}</textarea>
+            <textarea id="decOutput" placeholder="这里是客官需要的十进制输出">{{decOutput}}</textarea>
+            <textarea id="hexOutput" placeholder="这里是客官需要的十六进制输出">{{hexOutput}}</textarea>
+        </div>
+      <a class="btn btn-danger " href="/">返回主页</a>
+      </div>
+</div>
+
+</body>
+<script>
+    function myEncode(type1) {
+        var input = document.getElementById("inpsut").value;
+        postData = {"input": input, "type": type1};
+        console.log(input+type1);
+         $.post("/crypto/converter/",postData,function (output) {
+            document.getElementById("binOutput").innerHTML=output.binOutput;
+            document.getElementById("octOutput").innerHTML=output.octOutput;
+            document.getElementById("decOutput").innerHTML=output.decOutput;
+            document.getElementById("hexOutput").innerHTML=output.hexOutput;
+       })
+    }
+</script>
+</html>

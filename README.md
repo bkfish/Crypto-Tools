@@ -16,3 +16,6 @@
 
 #### 4、摩尔斯编码
 <img src="image/5.png" width=600 height=360  />
+
+#### 5、超大数的进制转换
+<img src="image/6.png" width=600 height=360  />

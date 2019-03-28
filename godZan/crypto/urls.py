@@ -8,5 +8,6 @@ urlpatterns = [
     path('urlCode/', views.urlCode, name='urlCode'),
     path('morse/', views.morse, name='morse'),
     path('morseTable/', views.morseTable, name='morseTable'),
+    path('converter/', views.converter, name='converter'),
 
 ]
