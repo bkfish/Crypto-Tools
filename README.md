@@ -5,17 +5,17 @@
 ## 目前功能
 
 #### 1、BASE家族
-<img src="image/2.png" width=600 height=360 />
+<img src="image/2.gif" width=600 height=360 />
 
 #### 2、Hex编码
-<img src="image/3.png" width=600 height=360 />
+<img src="image/3.gif" width=600 height=360 />
 
 #### 3、URL编码
-<img src="image/4.png" width=600 height=360 />
+<img src="image/4.gif" width=600 height=360 />
 
 
 #### 4、摩尔斯编码
-<img src="image/5.png" width=600 height=360  />
+<img src="image/5.gif" width=600 height=460  />
 
 #### 5、超大数的进制转换
-<img src="image/6.png" width=600 height=360  />
+<img src="image/6.gif" width=600 height=460  />
