@@ -18,6 +18,7 @@ urlpatterns = [
     path('moder/', views.moder, name='moder'),
     path('commode/', views.commode, name='commode'),
     path('rsascript/', views.rsascript, name='rsascript'),
+    path('vigenere/', views.vigenere, name='vigenere'),
     
 
 ]

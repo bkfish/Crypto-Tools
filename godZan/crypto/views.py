@@ -7,6 +7,9 @@ from cryptoFunction.morse_moudle import Morse
 import urllib.request
 from django.shortcuts import render_to_response, render, redirect
 from cryptoFunction.jsfuck_moudle import JSFuck
+from pycipher import Autokey
+from pycipher import Vigenere
+
 #BASE家族
 def base(request):
     if request.method=='POST':
@@ -278,6 +281,28 @@ def commode(request):
     else:
         return render(request,'commode.html')
 
+def vigenere(request):
+    if request.method=='POST':
+        key=request.POST['key']
+        input = request.POST['input']
+        type1=request.POST['type']
+        output =""
+        if key=='0':
+            output="请输入Key??"
+            return HttpResponse(output)
+        if type1=="ve":
+            output=Vigenere(key).encipher(input)
+        elif type1=="vd":
+            output=Vigenere(key).decipher(input)
+        elif type1=="ae":
+            output=Autokey(key).encipher(input)
+        elif type1=="ad":
+            output=Autokey(key).decipher(input)
+        else:
+            output="客官您是什么操作呀？？"
+        return HttpResponse(output)
+    else:
+        return render(request, 'vigenere.html')
 
 def rsascript(request):
     return render(request,'rsascript.html')

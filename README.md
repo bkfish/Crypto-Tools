@@ -50,3 +50,6 @@ python mannage runserver
 #### 11、JSfuck加密
 <img src="image/jsfuck.gif" width=600 height=460  />
 
+#### 12、维吉尼亚/AutoKey
+<img src="image/weijiniya.png" width=600 height=460  />
+
