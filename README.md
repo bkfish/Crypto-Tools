@@ -11,7 +11,7 @@ git clone https://github.com/Kit4y/Crypto-Tools.git
 cd Crypto-Tools
 pip install -r requirements.txt
 cd godZan
-python mannage runserver 
+python manage runserver 
 ```
 然后访问`localhost:8000`
 ### 目前功能
