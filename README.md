@@ -13,7 +13,7 @@ pip install -r requirements.txt
 cd godZan
 python manage runserver 
 ```
-然后访问`localhost:8000`
+然后访问 `localhost:8000`
 ### 目前功能
 
 #### 1、BASE家族
